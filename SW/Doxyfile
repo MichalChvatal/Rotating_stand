@@ -1,0 +1,75 @@
+# Doxyfile 1.10.0
+
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+
+PROJECT_NAME           = "Rotating stand"
+PROJECT_BRIEF          = "Rotating stand controlled by ATtiny Microcontroller (Attiny13)"
+PROJECT_LOGO           =
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+USE_MDFILE_AS_MAINPAGE =
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+#---------------------------------------------------------------------------
+# Build related configuration options
+#---------------------------------------------------------------------------
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+# Include brief descriptions for members without docs
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES
+
+#---------------------------------------------------------------------------
+# Input related configuration options
+#---------------------------------------------------------------------------
+
+INPUT                  = ./src
+FILE_PATTERNS          = *.c *.h
+RECURSIVE              = NO
+
+#---------------------------------------------------------------------------
+# Output formats
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_MAN           = NO
+
+#---------------------------------------------------------------------------
+# HTML configuration options
+#---------------------------------------------------------------------------
+
+HTML_COLORSTYLE        = AUTO
+HTML_DYNAMIC_SECTIONS  = YES
+SEARCHENGINE           = YES
+
+#---------------------------------------------------------------------------
+# LaTeX / PDF configuration options
+#---------------------------------------------------------------------------
+
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+PDF_HYPERLINKS         = YES
+GENERATE_TREEVIEW      = YES
+
+#---------------------------------------------------------------------------
+# Source browsing
+#---------------------------------------------------------------------------
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+#------------------------------------------
